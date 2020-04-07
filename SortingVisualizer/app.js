@@ -1,7 +1,7 @@
   let animation = [],
   step = 0,
   SI = 0,
-  delay = 1000,
+  delay = 200,
   Bars = [],
   prev_i = -1,
   prev_j = -1;
@@ -56,20 +56,10 @@
             let i = action[1]
             let j = action[2]
 
-
             prev_i = -1;
             prev_j = -1;
 
-
             swapBars(Bars,i,j);
-            /*
-            let t = Bars[i].style.height,
-            t1 = Bars[i].innerHTML;
-            Bars[i].style.height = Bars[j].style.height;
-            Bars[i].innerHTML = Bars[j].innerHTML;
-            Bars[j].style.height = t;
-            Bars[j].innerHTML = t1
-            */
             
             change(i,"rgba("+ [169, 92, 232, 0.8].join(',')+")");
             change(j,"rgba("+ [66, 134, 244, 0.8].join(',')+")");
@@ -152,7 +142,7 @@ function generateArray(){
       let str = "";
 
       
-    let n = Math.floor(window.innerWidth * 0.086) + 5 ;
+    let n = Math.floor(window.innerWidth * 0.080) + 5 ;
     //let n = Math.floor(window.innerWidth * 0.13) + 5
       
       for(let i = 0; i < n; i++){
