@@ -150,8 +150,12 @@ function partition(arr, left, right) {
 function generateArray(){
       array = [];
       let str = "";
+
       
-      for(let i = 0; i < 20; i++){
+    let n = Math.floor(window.innerWidth * 0.086) + 5 ;
+    //let n = Math.floor(window.innerWidth * 0.13) + 5
+      
+      for(let i = 0; i < n; i++){
           let t = Math.ceil(Math.random() * 250 + 50);
           array.push(t);
           str += `<div class="arrayelement" style="height:${t}px">${t}</div>`

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="generateArray()">
+    <ul>
+        <li class="active"><button class = "button" onclick="generateArray()">Generate Array</button class></li>
+        <li>
+            <select class="button">
+                <option value="Merge Sort">Merge Sort</option>
+                <option value="Quick Sort">Quick Sort</option>
+                <option value="Insertion Sort">Insertion Sort</option>
+                <option value="Bubble Sort">Bubble Sort</option>
+            </select>
+        </li>
+        <!--
+            <li><button class = "button" name="algo">Merge Sort</button class></li>
+            <li><button class = "button" name="algo">Quick Sort</button class></li>
+            <li><button class = "button" name="algo">Bubble Sort</button class></li>
+        -->
+        
+        <li><button class = "button" onclick="startquickSort()">Sort</button></li>
+    </ul>
+
+    <div class="container">
+        <div id="array" ></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
