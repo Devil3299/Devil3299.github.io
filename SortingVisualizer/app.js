@@ -11,10 +11,10 @@
     if(step < animation.length){
       var action = animation[step]
       
-        if(prev_i > -1){
+        if(prev_i > -1)
           change(prev_i,"rgba("+ [66, 134, 244, 0.8].join(',')+")")
           change(prev_j,"rgba("+ [66, 134, 244, 0.8].join(',')+")")  
-        }
+        
         
         switch(action[0]){
           case "compare_true":{
