@@ -6,7 +6,7 @@ ul {
 }
 
 .button{
-    padding: 10px 10px;
+    padding: 10px 20px;
     text-decoration: none;
     background: none;
     color: white;
@@ -15,7 +15,7 @@ ul {
 
 li {
     float: left;
-    margin: 5px;
+    margin: 10px;
 }
 
 
@@ -64,6 +64,9 @@ li a:hover {
         display: none;
         width:100%;
     }
+    .button{
+        padding: 5px 7px;
+    }   
     .container {
         clear: both;
         width:100%;

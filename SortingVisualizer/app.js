@@ -1,7 +1,7 @@
   let animation = [],
   step = 0,
   SI = 0,
-  delay = 200,
+  delay = 50,
   Bars = [],
   prev_i = -1,
   prev_j = -1;
