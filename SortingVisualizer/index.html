@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 <body onload="generateArray()">
-    <ul style="display: flex; justify-content: center;">
-        <li class="active"><button class = "button" onclick="generateArray()">Generate Array</button class></li>
-        <li>
-            <select class="button">
-                <option value="Merge Sort">Merge Sort</option>
-                <option value="Quick Sort">Quick Sort</option>
-                <option value="Insertion Sort">Insertion Sort</option>
-                <option value="Bubble Sort">Bubble Sort</option>
-            </select>
-        </li>
-        
-        <li><button class = "button" onclick="startquickSort()"><span>Sort</span></button></li>
-    </ul>
 
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Sorting Visualizer</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a onclick="generateArray()" style="background-color: rgb(70, 69, 69)">Generate Array</a></li>
+                    <li class="active"><a href="#">Quick Sort</a></li>
+                    <li><a href="#">Merge Sort</a></li>
+                    <li><a href="#">Bubble Sort</a></li>
+                    <li><a href="#">Insertion Sort</a></li>
+                </ul>
+                <button class="btn btn-danger navbar-btn" onclick="startquickSort()">Sort</button>
+            </div>
+        </div>
+      </nav>
+
+
+<!--        
+    <div class="navbar navbar-inverse">
+        <ul>
+            <li class="active"><button class = "button" onclick="generateArray()">Generate Array</button class></li>
+            <li>
+                <select class="button">
+                    <option value="Merge Sort">Merge Sort</option>
+                    <option value="Quick Sort">Quick Sort</option>
+                    <option value="Insertion Sort">Insertion Sort</option>
+                    <option value="Bubble Sort">Bubble Sort</option>
+                </select>
+            </li>
+            
+            <li><button class = "button" onclick="startquickSort()">Sort</button></li>
+        </ul>
+    </div>
+-->
     <div class="container">
         <div id="array" ></div>
     </div>

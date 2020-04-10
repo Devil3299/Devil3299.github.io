@@ -1,57 +1,17 @@
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.button{
-    padding: 10px 20px;
-    text-decoration: none;
-    background: none;
-    color: white;
-    border: 1px solid;
-}
-
-li {
-    float: left;
-    margin: 10px;
-}
-
-
-li option{
-    display: list-item;
-    margin: 10px;
-    background-color: #333;
-    color: white;
-}
-
-li button:hover{
-    background-color: #4CAF50;   
-}
-li a:hover {
-    background-color: #4CAF50;   
-}
-
-.active{
-    background-color: #4CAF50;   
-    border: 1px solid white;
-}
-
 #array{
     text-align: center;
 }
 
 .container{
-    width: 90%;
-    margin: auto;
-    padding: 0px 2px;
-    border: 1px solid #4CAF50;
+    width: 80%;
+    margin: 50px;
+    padding: 10px 2px;
+    border: 1px solid;
 }
 
 .arrayelement{
     display: inline-block;
-    margin: 0px 2px;
+    margin: 10px 2px;
     width: 5px;
     font-size: 0px;
     background-color: rgba(66, 134, 244, 0.8);
@@ -59,14 +19,11 @@ li a:hover {
 
 
 @media (max-width: 400px){
-    .ul {
+    .body{
+        margin: auto;
         clear: both;
-        display: none;
         width:100%;
     }
-    .button{
-        padding: 5px 7px;
-    }   
     .container {
         clear: both;
         width:100%;

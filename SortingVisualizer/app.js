@@ -11,10 +11,11 @@
     if(step < animation.length){
       var action = animation[step]
       
-        if(prev_i > -1)
+      
+        change(prev_j,"rgba("+ [66, 134, 244, 0.8].join(',')+")")  
+        if(prev_i > -1){
           change(prev_i,"rgba("+ [66, 134, 244, 0.8].join(',')+")")
-          change(prev_j,"rgba("+ [66, 134, 244, 0.8].join(',')+")")  
-        
+        }
         
         switch(action[0]){
           case "compare_true":{
@@ -40,15 +41,16 @@
                 j = action[2],
                 p = action[3];
 
-                
+              
+            prev_i = i;
+            prev_j = j;
+
             if(i > -1)
             change(i,"red")
             change(j,"red")
                 
             change(p,"yellow")
 
-            prev_i = i;
-            prev_j = j;
 
             break; 
           }
@@ -73,6 +75,8 @@
     else{
       clearInterval(SI);  
       console.log("finished");
+      prev_i = -1;
+      prev_j = -1;
       for(let i = 0; i < Bars.length; i++){
         fill(i);
       }
@@ -142,7 +146,7 @@ function generateArray(){
       let str = "";
 
       
-    let n = Math.floor(window.innerWidth * 0.080) + 5 ;
+    let n = Math.floor(window.innerWidth * 0.080) ;
     //let n = Math.floor(window.innerWidth * 0.13) + 5
       
       for(let i = 0; i < n; i++){
