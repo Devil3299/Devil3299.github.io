@@ -28,4 +28,8 @@
         clear: both;
         width:100%;
     }
+    .btn {
+        width:40%;
+        margin-left: 95px;
+    }
 }
